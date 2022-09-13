@@ -1,5 +1,5 @@
 //
-//  CreateAccountView.swift
+//  AddItemView.swift
 //  SecretSanta
 //
 //  Created by Christian Martinez on 9/13/22.
@@ -7,21 +7,17 @@
 
 import SwiftUI
 
-struct CreateAccountView: View {
-    @State var email = ""
-    @State var password = ""
-    @State var firstName = ""
-    @State var lastName = ""
+struct AddItemView: View {
+    @State var itemName = ""
+    @State var websiteLink = ""
     
     var body: some View {
         VStack {
             Spacer()
             
             Group {
-                TextField("E-mail", text: $email)
-                TextField("Password", text: $password)
-                TextField("E-mail", text: $firstName)
-                TextField("Password", text: $lastName)
+                TextField("Item Name", text: $itemName)
+                TextField("Website Link", text: $websiteLink)
             }
             .frame(minWidth: 0, maxWidth: .infinity, maxHeight: 55)
             .font(.system(size: 20))
@@ -29,12 +25,14 @@ struct CreateAccountView: View {
             .padding([.horizontal], 4)
             .cornerRadius(16)
             .overlay(RoundedRectangle(cornerRadius: 16).stroke(Color.gray))
+            
             Spacer()
             
             Button {
-                print("Log in")
+                print("Add Item to List")
+                print("Navigate back to My List")
             } label: {
-                Text("Create Account")
+                Text("Add Item")
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .font(.system(size: 18))
                     .padding()
@@ -53,8 +51,8 @@ struct CreateAccountView: View {
     }
 }
 
-struct CreateAccountView_Previews: PreviewProvider {
+struct AddItemView_Previews: PreviewProvider {
     static var previews: some View {
-        CreateAccountView()
+        AddItemView()
     }
 }
