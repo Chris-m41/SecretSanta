@@ -13,6 +13,7 @@
 		F81B24D028D127F900F56753 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81B24CF28D127F900F56753 /* Preview Assets.xcassets */; };
 		F81B24D728D12E8500F56753 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B24D628D12E8500F56753 /* LoginView.swift */; };
 		F81B24D928D12ED700F56753 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B24D828D12ED700F56753 /* CreateAccountView.swift */; };
+		F81B24DC28D1335000F56753 /* MyListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B24DB28D1335000F56753 /* MyListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F81B24CF28D127F900F56753 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F81B24D628D12E8500F56753 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		F81B24D828D12ED700F56753 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
+		F81B24DB28D1335000F56753 /* MyListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +59,7 @@
 			children = (
 				F81B24C828D127F800F56753 /* SecretSantaApp.swift */,
 				F81B24CA28D127F800F56753 /* ContentView.swift */,
-				F81B24D628D12E8500F56753 /* LoginView.swift */,
-				F81B24D828D12ED700F56753 /* CreateAccountView.swift */,
+				F81B24DA28D1333600F56753 /* Views */,
 				F81B24CC28D127F900F56753 /* Assets.xcassets */,
 				F81B24CE28D127F900F56753 /* Preview Content */,
 			);
@@ -71,6 +72,16 @@
 				F81B24CF28D127F900F56753 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F81B24DA28D1333600F56753 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F81B24D828D12ED700F56753 /* CreateAccountView.swift */,
+				F81B24D628D12E8500F56753 /* LoginView.swift */,
+				F81B24DB28D1335000F56753 /* MyListView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 				F81B24CB28D127F800F56753 /* ContentView.swift in Sources */,
 				F81B24D928D12ED700F56753 /* CreateAccountView.swift in Sources */,
 				F81B24C928D127F800F56753 /* SecretSantaApp.swift in Sources */,
+				F81B24DC28D1335000F56753 /* MyListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
