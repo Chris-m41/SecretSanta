@@ -11,6 +11,8 @@
 		F81B24CB28D127F800F56753 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B24CA28D127F800F56753 /* ContentView.swift */; };
 		F81B24CD28D127F900F56753 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81B24CC28D127F900F56753 /* Assets.xcassets */; };
 		F81B24D028D127F900F56753 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F81B24CF28D127F900F56753 /* Preview Assets.xcassets */; };
+		F81B24D728D12E8500F56753 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B24D628D12E8500F56753 /* LoginView.swift */; };
+		F81B24D928D12ED700F56753 /* CreateAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F81B24D828D12ED700F56753 /* CreateAccountView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		F81B24CA28D127F800F56753 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F81B24CC28D127F900F56753 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F81B24CF28D127F900F56753 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F81B24D628D12E8500F56753 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		F81B24D828D12ED700F56753 /* CreateAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				F81B24C828D127F800F56753 /* SecretSantaApp.swift */,
 				F81B24CA28D127F800F56753 /* ContentView.swift */,
+				F81B24D628D12E8500F56753 /* LoginView.swift */,
+				F81B24D828D12ED700F56753 /* CreateAccountView.swift */,
 				F81B24CC28D127F900F56753 /* Assets.xcassets */,
 				F81B24CE28D127F900F56753 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F81B24D728D12E8500F56753 /* LoginView.swift in Sources */,
 				F81B24CB28D127F800F56753 /* ContentView.swift in Sources */,
+				F81B24D928D12ED700F56753 /* CreateAccountView.swift in Sources */,
 				F81B24C928D127F800F56753 /* SecretSantaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
