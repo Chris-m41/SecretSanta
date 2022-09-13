@@ -28,13 +28,50 @@ struct MyListView: View {
     // link will break if https is missing
     //TODO: Add an edit and delete row object
     var body: some View {
-        NavigationStack {
-            List(data){ data in
-                Link(data.name, destination: URL(string: data.link)!)
+        ZStack {
+            NavigationStack {
+                List(data){ data in
+                    Link(data.name, destination: URL(string: data.link)!)
+                }
+                .navigationTitle("My List")
             }
-            .navigationTitle("My List")
+            VStack(alignment:.trailing) {
+                  Spacer()
+                  HStack {
+                      Spacer()
+                      Button(){
+                          print("Add to my list")
+                      }
+                  label: {
+                          HStack {
+                              Image(systemName: "plus")
+                                  .resizable()
+                                  .frame(width: 50, height: 50)
+                                  .foregroundColor(.white)
+                          }
+                          .frame(width: 50, height: 50)
+                          .padding()
+                              .background(Color.blue)
+                              .mask(Circle())
+                              
+                      }
+                      .padding()
+//                      .frame(width: 200, height: 200)
+//                          .border(Color.red, width: 10)
+                  }
+              }
+//            VStack(alignment: .trailing) {
+//             Spacer()
+//                HStack {
+//                    Spacer()
+//                    Button {
+//                        print("add item")
+//                    } label: {
+//                        Image(systemName: "plus.app.fill")
+//                    }
+//                }
+//            }
         }
-
     }
 }
 
